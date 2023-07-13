@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #61539471;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Seccion de carta cargando */
+.carta.cargando{
+    height: 600px;
+}
+.header.cargando{
+    width: 100%;
+    height: 52%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    background-image: linear-gradient(to right,#f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%);
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+.cargando .carta-titulo{
+    width: 260px;
+    height: 25px;
+    border-radius: 5px;
+}
+.cargando .carta-texto{
+    width: 310px;
+    height: 40px;
+    border-radius: 5px;
+}
+.cargando .carta-autor{
+    width: 97px;
+    height: 23px;
+    border-radius: 5px;
+}
+
+.persona.cargando{
+    margin-top: 50px;
+}
+.cargando .carta-fecha{
+    width: 97px;
+    height: 16px;
+    border-radius: 25%;
+}
+.cargando .persona-foto{
+    width: 60px;
+    height: 60px;
+    margin-left: 35px;
+    border-radius:50%;
+}
+
+
+.cargando .carta-fecha, .cargando .carta-autor,.cargando .persona-foto,
+.cargando .carta-titulo,.cargando .textos h2 {
+    background-image: linear-gradient(to right,#f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%);
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+.textos h2{
+    width: 310px;
+    height: 15px;
+    margin:11px;
+    border-radius: 5px;
+    margin-left: 35px;
+}
+
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+    100% {
+        background-position: -150% 0;
+    }
+}
+
+/* Sección de carta cargada */
+.carta{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carta-titulo{
+    margin-top: 35px; 
+    margin-left: 35px;
+    font-size: 21px;
+}
+.carta-texto{
+    font-size: 17px;
+    width: 80%;
+    margin-left: 35px;
+    font-weight: 400;
+    color: #6e6e68;
+    
+}
+#imagen{
+    width: 100%;
+    height: 52%;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+.persona{
+    display: flex;
+}
+.persona h3, .persona h5{
+    margin: .5rem;
+}
+.carta-fecha{
+    color:#b6b4b4;
+}
+
+#perfil{
+    margin-left: 35px;
+    width: 60px;
+    border-radius:50%;
+    
+}
+.persona-foto{
+    display: inline-block;
+    
+}
+
+
+
